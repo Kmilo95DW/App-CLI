@@ -1,38 +1,22 @@
-.App {
-  text-align: center;
+.navbar{
+  padding-top: .9rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-nav{
+  font-family: 'Oxygen', sans-serif;
+  font-size: 0.9rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-brand{
+  font-family: 'Supermercado One', cursive;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.rojo {
+  background-color: red;
+  height: 100px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
