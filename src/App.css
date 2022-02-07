@@ -23,6 +23,32 @@
   font-weight: 400;
 }
 
+.content-cont{
+  outline: red 1px solid;
+  width: 13vw;
+  height: 9.6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.text-stock{
+  background-color: #0d6efd;
+  width: 5vw;
+  margin-bottom: 0;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center-conta{
+  margin-bottom: 0;
+}
+
+
+
 
 
 
