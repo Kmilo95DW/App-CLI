@@ -1,11 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import ItemCount from './ItemCount';
+import ItemList from './ItemList';
 
 const ItemListContainer = () => {
     return(
         <>
-        <div class="container" id='contenido'>
-            <p>Este es el catalogo de concepts</p>
+        <div className="container" id='contenido'>
+            <ItemList/>
             <ItemCount />
         </div>
         </>

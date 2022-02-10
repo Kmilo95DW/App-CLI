@@ -20,14 +20,14 @@ const ItemCount = () => {
 
     return(
             <div className="content-cont">
-                <div class="btn-group" role="group" aria-label="Basic example">
-                     <button onClick={() => decrease(1)} type="button" class="btn btn-primary">-</button>
+                <div className="btn-group" role="group">
+                     <button onClick={() => decrease(1)} type="button" className="btn btn-primary">-</button>
                         <div className="text-stock">
-                            <p class="text-center text-center-conta">{stock}</p>
+                            <p className="text-center text-center-conta">{stock}</p>
                         </div>
-                    <button onClick={() => increment(7)} type="button" class="btn btn-primary">+</button>             
+                    <button onClick={() => increment(7)} type="button" className="btn btn-primary">+</button>             
                 </div>
-                <button type="button" class="btn btn-outline-primary">Agregar al carrito</button>
+                <button type="button" className="btn btn-outline-primary" id="btn_cart">Agregar al carrito</button>
             </div>     
     );
 }

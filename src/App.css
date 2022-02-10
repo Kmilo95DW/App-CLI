@@ -19,7 +19,7 @@
 #contenido{
   padding-top: 2rem;
   font-family: 'Oxygen', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 400;
 }
 
@@ -45,6 +45,10 @@
 
 .text-center-conta{
   margin-bottom: 0;
+}
+
+#btn_cart{
+  font-size: 1rem;
 }
 
 
