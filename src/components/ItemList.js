@@ -1,20 +1,25 @@
-let is_ok = true;
+import { useEffect } from "react";
+import { customFetch } from "./customFetch.js";
 
 const {productos} = require("./productos.js");
 
-console.log(productos)
+const ItemList = () => {
 
-export const customFetch = (timeout, task) => {
-    return new Promise ((resolve, reject) =>{
-        setTimeout(() => {
-            if (is_ok){
-                resolve(productos)
-            }else{
-                reject("No se pudo acceder a la base de datos")
-            }    
-        }, timeout);    
-    })
+        useEffect( () =>{
+            customFetch(1000, productos)
+                .then(respuesta => console.log(respuesta))
+                .catch(error => console.log(error))
+        }, [])
+
+        return
+    
 }
 
 
 export default ItemList
+
+
+
+   
+
+

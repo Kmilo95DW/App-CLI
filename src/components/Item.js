@@ -1,5 +1,5 @@
 
-const Item = () =>{
+const Item = () => {
     return(
         <div className="item-contenedor">
             <div className="image-product">
