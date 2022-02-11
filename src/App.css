@@ -1,3 +1,10 @@
+/*Reseteo p*/
+p{
+  margin-bottom: 0 !important;;
+}
+
+/*Navbar*/
+
 .navbar{
   padding-top: .9rem;
 }
@@ -16,41 +23,65 @@
   font-family: 'Supermercado One', cursive;
 }
 
+/*Contenido*/
+
 #contenido{
   padding-top: 2rem;
   font-family: 'Oxygen', sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
 }
 
 .content-cont{
-  outline: red 1px solid;
-  width: 13vw;
-  height: 9.6vh;
+  width: 100%;
+  height: 10vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  align-content: space-around;
 }
 
 .text-stock{
   background-color: #0d6efd;
-  width: 5vw;
-  margin-bottom: 0;
+  width: 4.7vw;
   color: aliceblue;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.text-center-conta{
-  margin-bottom: 0;
-}
-
 #btn_cart{
   font-size: 1rem;
+  margin-top: 0.3rem;
 }
 
+/*estilos de los productos/cards*/
+
+.item-contenedor{
+  background-color: rgb(211, 228, 228);
+  padding: 1rem;
+  border-radius: 0.9rem;
+  margin-bottom: 2vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.info-product{
+  text-align: center;
+  font-family: 'Supermercado One', cursive;
+}
+
+h3{
+  font-family: 'Supermercado One', cursive;
+}
 
 
 

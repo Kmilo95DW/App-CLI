@@ -1,6 +1,6 @@
 let is_ok = true;
 
-export const customFetch = (timeout, task) => {
+export const customFetch = (task, timeout) => {
     return new Promise ((resolve, reject) =>{
         setTimeout(() => {
                 if (is_ok){
