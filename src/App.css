@@ -21,6 +21,7 @@ p{
 
 .navbar-brand{
   font-family: 'Supermercado One', cursive;
+  font-size: 1.32rem !important;
 }
 
 /*Contenido*/
@@ -37,13 +38,14 @@ p{
   align-content: space-around;
 }
 
+/*Boton*/
+
 .content-cont{
   width: 100%;
   height: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   align-content: space-around;
 }
@@ -75,12 +77,54 @@ p{
 }
 
 .info-product{
-  text-align: center;
   font-family: 'Supermercado One', cursive;
 }
 
-h3{
+h4{
   font-family: 'Supermercado One', cursive;
+  text-align: left;
+  margin-top: 1vh !important;
+}
+
+/*Estilos del Item Detail */
+
+.item-detail-contenedor{
+  /*outline: red solid;*/
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.image-detail-product{
+  padding: 1.5rem;
+  background-color: rgb(214, 214, 214);
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.info-detail-product{
+  /*outline: green solid;*/
+  display: flex;
+  flex-direction: column;
+  font-family: 'Oxygen', sans-serif;
+  justify-content: space-evenly;
+  width: 50%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+h2{
+  font-family: 'Supermercado One', cursive;
+}
+
+h6{
+  background-color: #f8f8f8;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgb(131, 131, 131);
+  width: 100%;
 }
 
 

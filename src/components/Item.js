@@ -1,4 +1,3 @@
-import ItemCount from './ItemCount';
 
 const Item = (props) => {
     return(
@@ -7,10 +6,9 @@ const Item = (props) => {
                 <img src={props.picture}  alt={props.title} width ="270vw" height="340vh" object-fit="contain"/>
             </div>
             <div className="info-product">
-                 <h3>{props.title}</h3>
-                 <p>Precio:{props.price}</p>
+                 <h4>{props.title}</h4>
+                 <p>by: {props.artist}</p>
             </div>
-            <ItemCount />
         </div>
 
     );

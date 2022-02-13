@@ -6,8 +6,7 @@ const ItemListContainer = () => {
     return(
         <>
         <div className="container" id='contenido'>
-            <ItemList/>
-          
+            <ItemList/>      
         </div>
         </>
           
