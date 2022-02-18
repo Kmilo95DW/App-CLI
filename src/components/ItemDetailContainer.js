@@ -1,32 +1,35 @@
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { customFetch } from "./customFetch.js";
-import ItemDetail from "./ItemDetail"
+import ItemDetail from "./ItemDetail";
 
-const {productos} = require("./productos.js");
+const { productos } = require("./productos.js");
 
 const ItemDetailContainer = () => {
-        const[itemsDetail, setItemDetail] = useState({});
+  const [ItemsDetail, setItemDetail] = useState({});
+  const {productId} = useParams(); 
 
-        useEffect( () =>{
-            customFetch(productos[6], 2000)
-                .then(respuesta => setItemDetail(respuesta))
-                .catch(error => console.log(error))
-        }, [])
+  console.log(JSON.stringify(ItemsDetail))
 
-    return(
-             <div className="container" id='contenido'>
-                    <ItemDetail 
-                      picture = {itemsDetail.picture}
-                      title =  {itemsDetail.title}
-                      description = {itemsDetail.description}
-                      artist={itemsDetail.artist}
-                      price={itemsDetail.price}
-                      stock = {itemsDetail.stock}
-                    />         
-            </div>   
+  useEffect(() => {
+    customFetch(productos.find(producto => producto.id === parseInt(productId)), 2000)
+      .then((respuesta) => setItemDetail(respuesta))
+      .catch((error) => console.log(error));
+  }, [productId]);
 
-        
-    )
-}
+  return (
+    <div className="container" id="contenido">
+      <ItemDetail
+        key={ItemsDetail.id} 
+        picture={ItemsDetail.picture}
+        title={ItemsDetail.title}
+        description={ItemsDetail.description}
+        artist={ItemsDetail.artist}
+        price={ItemsDetail.price}
+        stock={ItemsDetail.stock}
+      />
+    </div>
+  );
+};
 
-export default ItemDetailContainer
+export default ItemDetailContainer;
