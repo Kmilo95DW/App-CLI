@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { customFetch } from "./customFetch.js";
 import ItemDetail from "./ItemDetail";
 
-const { productos } = require("./productos.js");
+const { productos } = require("./productos.js");  
 
 const ItemDetailContainer = () => {
   const [ItemsDetail, setItemDetail] = useState({});

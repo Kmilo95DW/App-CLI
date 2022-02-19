@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
-const Item = (props, id) => {
+const Item = (props) => {
   return (
     <>
-      <Link to={ `/item/${id}`}  className="cards" style={{color: "black", textDecoration: 'none'} }>
+      <Link to={ `/item/${props.id}`}  className="cards" style={{color: "black", textDecoration: 'none'} }>
         <div className="item-contenedor">
           <div className="image-product">
             <img

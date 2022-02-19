@@ -34,7 +34,7 @@ const ItemList = () => {
     <>
         {items.map((items) => (
           <Item
-            key={items.id}
+            id={items.id}
             picture={items.picture}
             title={items.title}
             artist={items.artist}
