@@ -1,6 +1,15 @@
 import ItemCount from "./ItemCount";
+import CheckOut from "./CheckOut";
 
 const ItemDetail = (props) => {
+
+  function onClick (e){
+    e.stopPropagation();
+  }
+
+  let itemCount = 0;
+
+  
   return (
     <>
         <div className="item-detail-contenedor">
@@ -21,7 +30,11 @@ const ItemDetail = (props) => {
             <p> {props.description} </p>
             <p>Precio: $ {props.price}</p>
             <p>Stock: {props.stock}</p>
-            <ItemCount />
+            {
+              itemCount === 0
+                ? <ItemCount stock={props.stock}  onClick={onClick}/>
+                : <CheckOut/>
+            }     
           </div>
         </div>
     </>

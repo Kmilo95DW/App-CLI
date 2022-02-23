@@ -11,7 +11,7 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav">
                              <li className="nav-item">
-                                 <Link to="/" className="nav-link active" aria-current="page">Home</Link>
+                                 <Link to="/" className="nav-link active" aria-current="page">Tienda</Link>
                              </li>
                              <li className="nav-item dropdown">
                                 <Link className="nav-link dropdown-toggle" to="none" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

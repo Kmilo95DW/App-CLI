@@ -20,7 +20,7 @@ const ItemDetailContainer = () => {
   return (
     <div className="container" id="contenido">
       <ItemDetail
-        key={ItemsDetail.id} 
+        id={ItemsDetail.id} 
         picture={ItemsDetail.picture}
         title={ItemsDetail.title}
         description={ItemsDetail.description}

@@ -1,9 +1,20 @@
 import { useState } from "react";
+//import { useEffect } from "react";
+//import { customFetch } from "./customFetch.js";S
+//import { Link } from "react-router-dom";
+
+const { productos } = require("./productos.js");  
 
 
 const ItemCount = () => {
 
-    const [stock, setStock] = useState(1)
+    const handleClick = (evt) =>  {
+        evt.stopPropagation();
+        alert("Agregar al carrito")
+    }
+
+    const [stock, setStock] = useState(1);
+
 
     const increment = (maximo) => {
         if(stock < maximo) {
@@ -27,7 +38,7 @@ const ItemCount = () => {
                         </div>
                     <button onClick={() => increment(7)} type="button" className="btn btn-primary">+</button>             
                 </div>
-                <button type="button" className="btn btn-primary" id="btn_cart">Agregar al carrito</button>
+                    <button onClick={handleClick} type="button" className="btn btn-primary" id="btn_cart">Agregar al carrito</button>
             </div>     
     );
 }
