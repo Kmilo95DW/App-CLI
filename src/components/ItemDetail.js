@@ -1,13 +1,15 @@
 import ItemCount from "./ItemCount";
 import CheckOut from "./CheckOut";
+import { useState } from "react";
 
 const ItemDetail = (props) => {
 
-  function onClick (e){
-    e.stopPropagation();
-  }
+  const [itemCount, setitemCount] = useState(0);
 
-  let itemCount = 0;
+  const onAdd = (quantity) =>{
+    alert("agregaste " + quantity + " productos")
+    setitemCount(quantity)
+  }
 
   
   return (
@@ -32,7 +34,7 @@ const ItemDetail = (props) => {
             <p>Stock: {props.stock}</p>
             {
               itemCount === 0
-                ? <ItemCount stock={props.stock}  onClick={onClick}/>
+                ? <ItemCount stock={props.stock}  onAdd={onAdd}/>
                 : <CheckOut/>
             }     
           </div>
